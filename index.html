@@ -17,15 +17,48 @@
     <title>Frontend Mentor | Order summary card</title>
   </head>
   <body>
-    Order Summary You can now listen to millions of songs, audiobooks, and
-    podcasts on any device anywhere you like! Annual Plan $59.99/year Change
-    Proceed to Payment Cancel Order
+    <main>
+      <article class="card">
+        <img
+          src="./assets/images/illustration-hero.svg"
+          alt="Woman listening to music"
+          class="card__image"
+        />
+        <div class="card__content">
+          <div class="card__info">
+            <h1 class="card__title">Order Summary</h1>
+            <p class="card__text">
+              You can now listen to millions of songs, audiobooks, and podcasts
+              on any device anywhere you like!
+            </p>
+          </div>
+          <div class="card__plan-container">
+            <div class="card__plan">
+              <img
+                src="./assets/images/icon-music.svg"
+                alt="Music icon"
+                class="card__icon"
+              />
+              <div class="card__plan-info">
+                <h2 class="card__plan-title">Annual Plan</h2>
+                <p class="card__plan-price">$59.99/year</p>
+              </div>
+              <a href="#" class="card__change">Change</a>
+            </div>
+            <div class="card__buttons">
+              <button class="card__button">Proceed to Payment</button>
+              <a href="#" class="card__cancel">Cancel Order</a>
+            </div>
+          </div>
+        </div>
+      </article>
+    </main>
 
-    <div class="attribution">
+    <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+      >. Coded by <a class="attribution__link" href="#">Krzysztof Pawłowski</a>.
+    </footer>
   </body>
 </html>
