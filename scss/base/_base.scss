@@ -12,6 +12,7 @@ body {
   @include flex-column();
   min-height: 100dvh;
   justify-content: flex-start;
+  text-align: center;
 }
 
 main {

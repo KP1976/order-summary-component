@@ -3,4 +3,36 @@
   border-radius: $border-radius-24;
   box-shadow: 0 1rem 1.5rem hsla(245, 75%, 52%, 0.15);
   @include flex-column();
+  overflow: hidden;
+
+  &__image {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__content {
+    @include flex-column($space-24);
+    padding: $space-34 $space-24;
+  }
+
+  &__info {
+    align-items: center;
+    @include flex-column($space-16);
+  }
+
+  &__title {
+    color: $dark-blue;
+    font-size: $font-size-22;
+    font-weight: 900;
+  }
+
+  &__text {
+    color: $desaturated-blue;
+    font-size: $font-size-14;
+    font-weight: 500;
+    line-height: $line-height-160;
+    letter-spacing: $letter-spacing_-02;
+    width: 80%;
+  }
 }
