@@ -169,3 +169,12 @@ main {
   padding: 0 1.5rem;
   width: 100%;
 }
+
+.card {
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 1.5rem;
+  box-shadow: 0 1rem 1.5rem hsla(245, 75%, 52%, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}

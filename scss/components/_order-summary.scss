@@ -1,0 +1,6 @@
+.card {
+  background-color: $white;
+  border-radius: $border-radius-24;
+  box-shadow: 0 1rem 1.5rem hsla(245, 75%, 52%, 0.15);
+  @include flex-column();
+}
