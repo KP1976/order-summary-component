@@ -205,11 +205,11 @@ main {
 }
 .card__text {
   color: hsl(224, 23%, 55%);
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: -0.4px;
-  width: 80%;
+  width: 90%;
 }
 .card__plan-container {
   display: flex;
@@ -223,6 +223,11 @@ main {
   display: flex;
   justify-content: space-between;
   padding: 1rem;
+}
+.card__plan-info-container {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
 }
 .card__plan-info {
   display: flex;
@@ -246,4 +251,25 @@ main {
   font-weight: 700;
   text-decoration: underline;
   letter-spacing: -0.5px;
+}
+.card__buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card__button {
+  background-color: hsl(245, 75%, 52%);
+  border-radius: 0.75rem;
+  box-shadow: 0 1rem 1.25rem hsla(245, 75%, 52%, 0.2);
+  color: hsl(0, 0%, 100%);
+  font-size: 0.875rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  padding: 1rem;
+}
+.card__cancel {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.875rem;
+  font-weight: 900;
+  letter-spacing: 0.8px;
 }

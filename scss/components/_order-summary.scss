@@ -29,11 +29,11 @@
 
   &__text {
     color: $desaturated-blue;
-    font-size: $font-size-14;
+    font-size: $font-size-16;
     font-weight: 500;
     line-height: $line-height-160;
     letter-spacing: $letter-spacing_-04;
-    width: 80%;
+    width: 90%;
   }
 
   &__plan-container {
@@ -47,6 +47,11 @@
     display: flex;
     justify-content: space-between;
     padding: $space-16;
+  }
+
+  &__plan-info-container {
+    align-items: center;
+    @include flex-row($space-16);
   }
 
   &__plan-info {
@@ -72,5 +77,27 @@
     font-weight: 700;
     text-decoration: underline;
     letter-spacing: $letter-spacing_-05;
+  }
+
+  &__buttons {
+    @include flex-column($space-24);
+  }
+
+  &__button {
+    background-color: $bright-blue;
+    border-radius: $border-radius-12;
+    box-shadow: 0 1rem 1.25rem hsla(245, 75%, 52%, 0.2);
+    color: $white;
+    font-size: $font-size-14;
+    font-weight: 700;
+    letter-spacing: $letter-spacing_08;
+    padding: $space-16;
+  }
+
+  &__cancel {
+    color: $desaturated-blue;
+    font-size: $font-size-14;
+    font-weight: 900;
+    letter-spacing: $letter-spacing_08;
   }
 }
