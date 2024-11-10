@@ -208,6 +208,42 @@ main {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.6;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.4px;
   width: 80%;
+}
+.card__plan-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.card__plan {
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+  border-radius: 0.75rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.card__plan-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.125rem;
+}
+.card__plan-title {
+  color: hsl(223, 47%, 23%);
+  font-size: 0.875rem;
+  font-weight: 900;
+}
+.card__plan-price {
+  color: hsl(224, 23%, 55%);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+.card__change {
+  color: hsl(245, 75%, 52%);
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-decoration: underline;
+  letter-spacing: -0.5px;
 }
