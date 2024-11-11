@@ -273,3 +273,15 @@ main {
   font-weight: 900;
   letter-spacing: 0.8px;
 }
+
+.attribution {
+  bottom: 0;
+  font-size: 0.875rem;
+  padding: 1rem;
+  position: absolute;
+}
+.attribution__link {
+  color: hsl(245, 75%, 52%);
+  font-weight: 700;
+  text-decoration: none;
+}
