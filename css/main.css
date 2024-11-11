@@ -320,6 +320,10 @@ main {
   font-weight: 700;
   text-decoration: underline;
   letter-spacing: -0.5px;
+  transition: color 0.2s ease-in-out;
+}
+.card__change:hover {
+  color: hsl(245, 83%, 68%);
 }
 @media (min-width: 28.125rem) {
   .card__change {
@@ -343,16 +347,25 @@ main {
   border-radius: 0.75rem;
   box-shadow: 0 1rem 1.25rem hsla(245, 75%, 52%, 0.2);
   color: hsl(0, 0%, 100%);
+  cursor: pointer;
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.8px;
   padding: 1rem;
+  transition: background-color 0.2s ease-in-out;
+}
+.card__button:hover {
+  background-color: hsl(245, 83%, 68%);
 }
 .card__cancel {
   color: hsl(224, 23%, 55%);
   font-size: 0.875rem;
   font-weight: 900;
   letter-spacing: 0.8px;
+  transition: color 0.2s ease-in-out;
+}
+.card__cancel:hover {
+  color: hsl(223, 47%, 23%);
 }
 
 .attribution {
