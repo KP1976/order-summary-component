@@ -25,12 +25,20 @@
   &__info {
     align-items: center;
     @include flex-column($space-16);
+
+    @include respond-to($breakpoint) {
+      @include flex-column($space-18);
+    }
   }
 
   &__title {
     color: $dark-blue;
     font-size: $font-size-22;
     font-weight: 900;
+
+    @include respond-to($breakpoint) {
+      font-size: $font-size-28;
+    }
   }
 
   &__text {
@@ -40,10 +48,19 @@
     line-height: $line-height-160;
     letter-spacing: $letter-spacing_-04;
     width: 90%;
+
+    @include respond-to($breakpoint) {
+      letter-spacing: 0;
+      width: 95%;
+    }
   }
 
   &__plan-container {
     @include flex-column($space-24);
+
+    @include respond-to($breakpoint) {
+      @include flex-column($space-30);
+    }
   }
 
   &__plan {
@@ -53,21 +70,37 @@
     display: flex;
     justify-content: space-between;
     padding: $space-16;
+
+    @include respond-to($breakpoint) {
+      padding: $space-26 $space-24;
+    }
   }
 
   &__plan-info-container {
     align-items: center;
     @include flex-row($space-16);
+
+    @include respond-to($breakpoint) {
+      @include flex-row($space-20);
+    }
   }
 
   &__plan-info {
     @include flex-column($space-2);
+
+    @include respond-to($breakpoint) {
+      @include flex-column($space-4);
+    }
   }
 
   &__plan-title {
     color: $dark-blue;
     font-size: $font-size-14;
     font-weight: 900;
+
+    @include respond-to($breakpoint) {
+      font-size: $font-size-16;
+    }
   }
 
   &__plan-price {
@@ -75,6 +108,10 @@
     font-size: $font-size-14;
     font-weight: 500;
     letter-spacing: $letter-spacing_02;
+
+    @include respond-to($breakpoint) {
+      font-size: $font-size-16;
+    }
   }
 
   &__change {
@@ -83,10 +120,18 @@
     font-weight: 700;
     text-decoration: underline;
     letter-spacing: $letter-spacing_-05;
+
+    @include respond-to($breakpoint) {
+      letter-spacing: 0;
+    }
   }
 
   &__buttons {
     @include flex-column($space-24);
+
+    @include respond-to($breakpoint) {
+      @include flex-column($space-34);
+    }
   }
 
   &__button {
